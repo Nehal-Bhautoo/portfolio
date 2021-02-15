@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Nehal Port-Folio',
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
-      routes: {
-        '/': (context) => LandingPage()
-      },
+      theme: ThemeData(
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: LandingPage(),
     );
   }
 }
